@@ -1,0 +1,229 @@
+:root {
+    --start-bg: #e0c3fc;
+    --end-bg: #8ec5fc;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, var(--start-bg) 0%, var(--end-bg) 100%);
+    overflow-x: hidden;
+}
+/* --- HERO SECTION STYLES --- */
+#hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c001a; 
+}
+
+#hero-title {
+    font-size: 6vw; 
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    z-index: 2; 
+    will-change: transform; 
+}
+#hero-content p {
+    text-align: center;
+    font-size: 1.5vw;
+    opacity: 0.8;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(120, 80, 200, 0.3) 0%, rgba(120, 80, 200, 0) 70%);
+    z-index: 1;
+    will-change: transform; 
+}
+
+.chapter {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#mechanical-era {
+    height: auto; 
+}
+
+/* --- MECHANICAL ERA STYLES (UNCHANGED) --- */
+.gears-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background:rgb(29, 28, 28);
+    z-index: 1;
+}
+
+.gear {
+    position: absolute;
+    opacity: 0.8;
+    filter: invert(1);
+}
+.gear-1 { top: 10%; left: 5%; width: 700px; }
+.gear-2 { top: 50%; left: 60%; width: 800px; }
+.gear-3 { top: -8%; right: -5%; width: 450px; }
+.gear-4 { bottom: 5%; left: 30%; width: 400px; }
+.gear-5 { top: 20%; right: 15%; width: 300px; }
+.gear-6 { top: 70%; right: 25%; width: 450px; }
+.gear-7 { bottom: 35%; right: 5%; width: 200px; }
+.gear-8 { top: 15%; left: 45%; width: 360px; }
+.gear-9 { bottom: 60%; left: -10%; width: 600px; }
+.gear-10 { top: 60%; left: -10%; width: 550px; }
+
+.horizontal-scroll-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.horizontal-track {
+    display: flex;
+    width: 300vw; 
+    height: 100vh;
+}
+
+#electronic-era,
+#pc-era,
+#internet-era,
+#ai-era {
+    height: auto;
+}
+
+.panel {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+.panel img {
+    max-width: 40%;
+    height: auto;
+    object-fit: contain;
+}
+.panel-content {
+    max-width: 50%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.parallax-bg {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 150%;
+    background-size: cover; background-position: center;
+    z-index: 1;
+}
+
+/* --- ELECTRONIC ERA STYLES (Interactive Grid) --- */
+#pc-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0A0A1E;
+    z-index: 1;
+}
+
+#electronic-era .panel-3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-caption {
+    max-width: 350px;
+    padding: 1.2rem;
+    font-size: 0.95rem;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+}
+
+/* --- PC ERA STYLES (NEW "Digital Rain" BG) --- */
+#pc-code-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* --- INTERNET ERA STYLES (Particle Network) --- */
+#electronic-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #020010;
+    z-index: 1;
+}
+
+#internet-era .horizontal-scroll-container {
+    position: relative;
+    z-index: 2;
+}
+
+/* --- AI ERA STYLES (NEW NEURAL NETWORK BG) --- */
+#ai-canvas {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: #050210;
+    z-index: 1;
+}
+#ai-era .horizontal-scroll-container {
+    position: relative; z-index: 2;
+}
+
+/* --- THANK YOU SECTION STYLES --- */
+#thank-you-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #050210;
+}
+
+#thank-you-content {
+    z-index: 2;
+    will-change: transform; 
+}
+
+#thank-you-content h2 {
+    font-size: 5vw;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#thank-you-content p {
+    font-size: 1.5vw;
+    opacity: 0.8;
+}
+
+.thank-you-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(0, 150, 255, 0.2) 0%, rgba(0, 150, 255, 0) 70%);
+    z-index: 1;
+    opacity: 0; 
+    will-change: opacity; 
+}
